@@ -7,6 +7,7 @@ class Road{
         this.left=x-width/2;
         this.right=x+width/2;
 
+        //infinity count can change depend your computer capacity
         const infinity=1000000;
         this.top=-infinity;
         this.bottom=infinity;
@@ -27,6 +28,7 @@ class Road{
             Math.min(laneIndex,this.laneCount-1)*laneWidth;
     }
 
+    //drawing road and lines
     draw(ctx){
         ctx.lineWidth=5;
         ctx.strokeStyle="white";
